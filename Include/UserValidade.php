@@ -1,7 +1,7 @@
 <?php
 
 class UserValidade {
-    public static function testarIdade($paramIdade){
+    public static function testaIdade($paramIdade){
         if(is_numeric($paramIdade)){
             return treu;
         }else{
