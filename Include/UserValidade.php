@@ -3,7 +3,7 @@
 class UserValidade {
     public static function testaIdade($paramIdade){
         if(is_numeric($paramIdade)){
-            return treu;
+            return true;
         }else{
             return false;
         }
