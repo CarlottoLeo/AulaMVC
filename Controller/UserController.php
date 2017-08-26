@@ -32,6 +32,10 @@ if ((!empty($_POST['txtUser'])) &&
             $user->email = $_POST['txtEmail'];
             $user->idade = $_POST['txtIdade'];
             $user->password = $_POST['pwdSenha'];
+            
+            $userDao = new UserDao();
+            $userDao->insertUser($user);
+            
             $_SESSION['user'] = $user->user;
             $_SESSION['mail'] = $user->email;
             header("location:../View/UserViewResult.php?");

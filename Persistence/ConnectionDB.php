@@ -11,8 +11,8 @@ class ConnectionDB extends PDO{
         if(!isset(self::$instance)) {
             try {
                 // Cria uma conexão e retorna a instância dela
-                self::$instance = new ConnectionDB("mysql:dbname=ecom;host=localhost","root","");
-                        echo "Conectado ao banco de dados!";die();
+                self::$instance = new ConnectionDB("mysql:dbname=ecomm;host=localhost","root","root");
+                        echo "Conectado ao banco de dados!";
             } catch (Exception $ex) {
                 echo "Ocorreram erros ao tentar conectar no banco de dados!";
                 echo "$e"; die();
